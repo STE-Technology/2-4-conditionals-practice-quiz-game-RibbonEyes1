@@ -13,11 +13,14 @@ quest_1 = input("1. Who wrote the book, Crime and 'Punishment?'? \
                 \n C)Lucy Maude Montgomery \
                 \n D)Herman Melville \
                 \n <" )
-if quest_1 == "A" or "a":
+
+
+#determines correct or incorrect answer
+if quest_1 == "A" or quest_1 == "a" :
     print("correct!")
     score=score+1
 else:
-    print("Incorrect")
+    print("incorrect")
 
 print("-----------------------------------------------------)")
 #ask question 2,need user input
@@ -27,7 +30,10 @@ quest_2 = input("2. Who's NOT a character in hit game Limbus Company? \
                 \n C)Hong Lu (Dream of the Red chamber)\
                 \n D)Anne Shirley(Anne of Green Gables) \
                 \n <")
-if quest_2 == "C" or "c":
+
+
+#determines correct or incorrect answer
+if quest_2 == "C" or quest_2 == "c":
     print("correct!")
     score=score+1
 else:
@@ -41,14 +47,17 @@ quest_3 = input("3. Which game has Mili (The indie band) Not provided music for?
                 \n C) ENDER LILIES:quietus of the knights \
                 \n D)Gris \
                 \n <")
-if quest_3 == "D" or "d":
+
+
+#determines correct or incorrect answer
+if quest_3 == "D" or quest_3 == "d":
     print("correct!")
     score=score+1
 else:
     print("Incorrect")
 
 print("-----------------------------------------------------)")
-#ask question 3,need user inputc
+#ask question 3,need user input
 
 quest_4=input("What drink invoves the use of rice and cinnamon? \
               \n A) Horchata \
@@ -57,16 +66,18 @@ quest_4=input("What drink invoves the use of rice and cinnamon? \
               \n D)jugo de sandia \
               \n <")
 
-if quest_4 == "A" or "a":
+#determines correct or incorrect answer
+if quest_4 == "A" or quest_4 == "a":
     print("correct!")
     score=score+1
 else:
     print("Incorrect")
 
+
 #PRINTS FINAL SCORE
 print("Final score: " + str(score))
 
-#these chunks are for an additional bit o personality for the quiz.it determines a response depending of the total score
+#these chunks are for an additional bit of personality for the quiz.it determines a response depending of the total score
 if score == 0:
     print("Oh well. try again")
 
